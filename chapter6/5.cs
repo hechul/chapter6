@@ -15,11 +15,19 @@ namespace chapter6
         {
             Console.WriteLine("In the CSharp Method ...");
         }
+        [Conditional("JAVA")]
+        public static void JAVAMethod()
+        {
+            Console.WriteLine("In the JAVA Method ...");
+
+        }
     }
     internal class Class1
     {public static void Main(String[] args)
         {
             conditionAttrApp.CsharpMethod();
+            conditionAttrApp.JAVAMethod();
+
         }
     }
 }
